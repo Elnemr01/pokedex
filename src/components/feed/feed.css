@@ -1,35 +1,19 @@
 .feed {
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
+    @apply p-[10px] text-center cursor-pointer;
 }
 
 .feed:hover {
-    box-shadow: 0 0 40px rgba(0, 0, 0, .08);
+    @apply shadow-[0_0_40px_rgba(0,_0,_0,_0.08)];
 }
 
 .feed .image {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-.feed .image img {
-    max-width: 100%;
-}
-
-.feed .text {
-
+    @apply w-[100px] m-[0_auto] h-[100px];
 }
 
 .feed .text .id {
-    font-size: 14px;
-    font-weight: 400;
+    @apply font-[400] text-[14px];
 }
 
 .feed .text .name {
-    font-size: 17px;
-    font-weight: bold;
-    margin-left: 5px;
-    text-transform: capitalize;
+    @apply font-bold capitalize ml-[5px] text-[17px];
 }

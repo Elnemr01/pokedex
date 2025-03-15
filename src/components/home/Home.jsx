@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import "./home.css"
 import Header from "./../header/Header"
 import FeedContainer from '../feedContainer/FeedContainer'
-import { useDispatch, useSelector } from 'react-redux'
-import { addOffset,decreaseOffset } from '../../reduxToolkit/offsetSlice'
 import LoadingPage from '../LoadingPage'
 
 

@@ -1,18 +1,11 @@
 
 footer {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 25px 0;
+    @apply p-[20px] flex justify-center gap-[20px] my-[25px];
 }
 
 /* loading page */
 .loading {
-    min-height: 100lvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @apply min-h-[100lvh] flex justify-center items-center;
 }
 
 .loader {

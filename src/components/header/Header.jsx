@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router'
 import logo from "../../assets/logo-image.png"
 import "./header.css"
-import Button from '../button/Button'
 
 const Header = () => {
     const [query,setQuery]=useState("");
@@ -18,7 +17,7 @@ const Header = () => {
                         setQuery(e.target.value);
                     }}
                     />
-                    <Link to={`${query}`} ><Button label="search"/></Link>
+                    <Link to={`${query}`} ><button className='btn'>search</button></Link>
                 </div>
             </div>
         </header>

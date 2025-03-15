@@ -1,81 +1,60 @@
 .selectedPokmon {
-    padding: 10px;
-    display: flex;
+    @apply p-[10px] flex;
 }
 
 @media (max-width: 992px) {
     .selectedPokmon {
-        flex-direction: column-reverse;
-        text-align: center;
+        @apply text-center flex-col-reverse;
     }
 }
 
 .selectedPokmon .image {
-    max-width: 500px;
-    margin: 0 auto;
+    @apply m-[0_auto] max-w-[500px] flex justify-center items-center;;
 }
 
 .selectedPokmon .image img {
-    max-width: 100%;
+    @apply max-w-full;
 }
 
 
 .selectedPokmon .info {
-    flex: 1;
+    @apply flex-1;
 }
 
 .selectedPokmon .info .types {
-    display: flex;
-    justify-content: start;
-    gap: 20px;
+    @apply flex justify-start gap-[20px];
 }
 
 @media (max-width: 992px) {
     .selectedPokmon .info .types {
-        justify-content: center;
+        @apply justify-center;
     }
 }
 
 .selectedPokmon .info h3 {
-    font-size: 50px;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+    @apply text-[50px] font-semibold capitalize mb-[15px];
 }
 
 .selectedPokmon .info .types span {
-    padding: 8px 12px;
-    font-size: 20px;
-    text-transform: capitalize;
+    @apply capitalize text-[25px] py-[8px] px-[12px];
 }
 
 .selectedPokmon .stats {
-    display: grid;
-    margin: 50px 0;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    @apply grid gap-[25px] my-[50px] grid-cols-[repeat(auto-fill,_minmax(100px,_1fr))];;
 }
 
 .selectedPokmon .stats .stat {
-    text-align: center;
+    @apply text-center;
 }
 
 .selectedPokmon .stats .stat .parameter {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 400;
+    @apply mb-[15px] font-[400] text-[18px];
 }
 
 .selectedPokmon .stats .stat .value {
-    font-size: 25px;
-    font-weight: 600;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, .1) ;
-    padding: 20px;
+    @apply p-[20px] border border-[rgba(0,_0,_0,_0.1)] rounded-[5px] text-[25px] font-semibold;
 }
 
 .selectedPokmon .stats .stat .value span {
-    font-size: 15px;
-    font-weight: 300;
-    margin-left: 3px;
+    @apply text-[15px] font-[300] ml-[3px];
 }

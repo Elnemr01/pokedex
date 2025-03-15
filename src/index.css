@@ -5,54 +5,13 @@
 
 
 html {
-    scroll-behavior: smooth;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    box-sizing: border-box;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0% 10px ;
-    
-
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width : 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
+    @apply scroll-smooth;
 }
 
 .btn {
-    padding: 6px 9px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #3f0ac7;
-    background-color: gold;
-    text-transform: capitalize;
-    width: 80px;
+    @apply py-[6px] px-[9px] text-[15px] font-semibold text-textColor bg-gold capitalize w-[75px];
 }
 
 .backBtn {
-    margin: 40px 10px;
+    @apply my-[40px] mx-[10px];
 }

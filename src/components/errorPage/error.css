@@ -1,12 +1,7 @@
 .error .container {
-    min-height: 100vh;
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: capitalize;
-    line-height: 1.2;
-    letter-spacing: .5px;
+    @apply min-h-screen text-[40px] font-semibold capitalize leading-[1.2] tracking-[0.5px];
 }
 
 .error .message {
-    text-align: center;
+    @apply text-center;
 }
