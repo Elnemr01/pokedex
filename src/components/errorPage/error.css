@@ -1,0 +1,12 @@
+.error .container {
+    min-height: 100vh;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.2;
+    letter-spacing: .5px;
+}
+
+.error .message {
+    text-align: center;
+}
